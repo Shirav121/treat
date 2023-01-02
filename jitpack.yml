@@ -1,0 +1,5 @@
+jdk:
+  - openjdk11
+install:
+  FILE="-Dfile=myapi.aar"
+  mvn install:install-file $FILE -DgroupId=com.example.repo -DartifactId=treat -Dversion=1.0.0 -Dpackaging=aar -DpomFile=pom.xml
